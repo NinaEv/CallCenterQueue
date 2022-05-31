@@ -5,7 +5,7 @@ import java.util.concurrent.ArrayBlockingQueue;
 
 public class CallCenter {
     private static final int CALLS = 60;
-    private static final Queue<String> phoneCalls = new ArrayBlockingQueue<>(CALLS);
+    private static final Queue<String> phoneCalls = new ArrayBlockingQueue<>(CALLS, true);
     private static final int WAIT = 1000;
     private static final int ANSWER = 3000;
 
